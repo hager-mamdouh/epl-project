@@ -1,0 +1,46 @@
+[
+    {"id":1,
+     "logo":"../../assets/images/ahmed.jpg",
+     "name" : "Ahmed Yasser",
+     "texten" : ["Good Morning"],
+     "image":["../../assets/images/Sunflower.jpg"]
+    },
+    
+     {"id":2,
+     "logo":"../../assets/images/marche.jpg",
+     "name" : "Le Marche",
+     "textar" : ["اشتري نسختك الإلكترونية من كتالوج لو مارشيه في دورته السابعة والأربعين بخصم ٢٠٪ من الآن وحتى ٢٨ فبراير علشان تقدر تزور معرض لو مارشيه من ١٠ حتى ١٣ مارس في مركز مصر للمعارض الدولية - التجمع الخامسيتم استلام الكتالوج في موعد اقصاه ٩ مارس"]
+    },
+    
+     {"id":3,
+     "logo":"../../assets/images/twist.jpg",
+     "name" : "Twist",
+     "texten" : ["✅Buy 1 bulky velvet for 450 EGP."," ✅Buy 2 bulky velvet for 800 EGP.","✅Buy 3 bulky velvet for 1150 EGP."],
+     "image":["../../assets/images/twistproduct.jpg" , "../../assets/images/twistproduct1.jpg"]
+    },
+
+    {"id":4,
+     "logo":"../../assets/images/download.jpg",
+     "name" : "Algeria",
+     "texten" : ["DZ"]},
+    {"id":5,
+     "logo":"../../assets/images/download.jpg",
+     "name" : "American Samoa",
+     "texten" : ["AS"]},
+    {"id":6,
+     "logo":"../../assets/images/download.jpg",
+     "name" : "AndorrA",
+     "texten" : ["AD"]},
+    {"id":7,
+     "logo":"../../assets/images/download.jpg",
+     "name" : "Angola",
+     "texten" : ["AO"]},
+    {"id":8,
+     "logo":"../../assets/images/download.jpg",
+     "name" : "Anguilla",
+     "texten" : ["AI"]},
+    {"id":9,
+    "logo":"../../assets/images/download.jpg",
+     "name" : "Antarctica",
+     "texten" : ["AQ"]}
+]

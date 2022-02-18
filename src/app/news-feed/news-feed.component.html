@@ -1,0 +1,183 @@
+<app-navbar></app-navbar>
+
+<div class="pb-3 container-fluid" style="padding-top: 90px;">
+    <div class="row">
+
+        <!-- start -->
+        <div class="start col-lg-3 d-lg-block d-none">
+            <div class="d-flex ">
+                <img src="../../assets/images/download.jpg" alt="" class="img-fluid rounded-circle me-3" width="50" style="height: 43px;"> 
+                <h3 class=" mb-0" style="font-weight: 500;">Hager Mamdouh</h3>
+            </div> 
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-user-friends"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Friends</h3>
+            </div>
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-users"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Groups</h3>
+            </div>
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-store-alt"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Marketplace</h3>
+            </div>
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-tv"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Watch</h3>
+            </div>
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-history"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Memories</h3>
+            </div>
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-ad"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Ad Center</h3>
+            </div>
+            <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-chart-bar"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Ads Manager</h3>
+            </div>
+             <div class="d-flex align-items-center mt-3 ms-2">
+                <i class="fas fa-tint text-danger"></i>
+                <h3 class=" mb-0" style="font-weight: 500;">Blood Donations</h3>
+            </div>
+
+        </div>
+
+
+        <!-- middle -->
+        <div class="middle col-lg-5 offset-lg-0 col-md-8 offset-md-2">
+           <div class="add-post box">
+                <div class="d-flex ">
+                    <img src="../../assets/images/download.jpg" alt="" class="img-fluid rounded-circle me-3" width="50"> 
+                    <input wrap="soft" type="text" name="post" id="post" placeholder="What's on your mind?"  class="ps-md-4 form-control post rounded-pill">
+                </div>
+                <hr>
+                <div class="d-flex justify-content-around">
+                    <button class="btn">
+                        <i class="fas fa-video text-danger" ></i> Live video
+                    </button>
+                    <button class="btn">
+                        <i class="fas fa-images text-success" ></i> Photo/video
+                    </button>
+                    <button class="btn d-md-block d-none">
+                        <i class="fas fa-smile text-warning"></i> Feelings/activity
+                    </button>
+                </div>
+
+            </div>
+            <div class="old-posts box1 mt-4" *ngFor="let post of data.default">
+                 <div class="row">
+                     <div class="col-10 d-flex align-items-center">
+                        <img [src]="post.logo" alt="" class="img-fluid rounded-circle me-2" width="50">
+                        <h2 class="mb-0">{{post?.name}}</h2>
+                     </div>
+                     <div class="col-2">
+                         <button class="btn rounded-circle">
+                        <i class="fas fa-ellipsis-h"></i>
+                         </button>
+                     </div>
+                 </div> 
+                 <div *ngIf="post?.texten" class="mt-3 text-start" >
+                    <h2 *ngFor="let item of post?.texten" class="fw-normal">
+                         {{item}}
+                    </h2>
+                </div> 
+                <div *ngIf="post?.textar" class="mt-3 text-end">
+                    <h2 *ngFor="let item of post?.textar" class="fw-normal">
+                        {{item}}
+                    </h2>
+                </div>
+                <div class="d-flex" *ngIf="post?.image">
+                    <div class="d-flex" *ngFor="let item of post?.image" >
+                        <img [src]="item" alt="" class="img-fluid">
+                    </div>
+                </div>
+            
+                <hr class="mb-0">
+
+                <div class="d-flex justify-content-around align-items-center">
+                    <button class="btn px-md-3 " style="color: rgb(116, 113, 113);">
+                        <i class="far fa-thumbs-up me-2" ></i>
+                        Like
+                    </button>
+                    <button class="btn px-md-3 " style="color: rgb(116, 113, 113);">
+                        <i class="far fa-comment-alt me-2" ></i>
+                       Comment
+                    </button>
+                    <button class="btn px-md-3 d-lg-block d-none " style="color: rgb(116, 113, 113);">
+                        <i class="far fa-share-square me-2" ></i>
+                        Share
+                    </button>
+                </div>
+            
+
+            </div>
+        </div>
+
+        <!-- end -->
+        <div class="end col-lg-3 offset-lg-1 d-lg-block d-none" >
+            <h2>Sponsered</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="../../assets/images/twistproduct.jpg" alt="" class="img-fluid" style="border-radius: 9px;" >
+                </div>
+                <div class="col-md-6">
+                    <h3>متبقي 7 قطع فقط</h3>
+                </div>
+            </div>
+            <div class="row align-items-center mt-3">
+                <div class="col-md-6">
+                    <img src="../../assets/images/Sunflower.jpg" alt="" class="img-fluid" style="border-radius: 9px;" >
+                </div>
+                <div class="col-md-6">
+                    <h3>Have a fresh air</h3>
+                </div>
+            </div>
+            <hr>
+            <h2>Contacts</h2>
+           <div style="font-weight: 500;">
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+            <div class="mt-3">
+                <img src="../../assets/images/ahmed.jpg" alt="" class="img-fluid rounded-circle me-2" width="45"> Ahmed Yasser
+            </div>
+           </div>
+        
+        </div>
+    </div>
+</div>

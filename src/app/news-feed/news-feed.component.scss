@@ -1,0 +1,48 @@
+.box{
+    background-color: #fff;
+    border-radius: 11px;
+    padding: 20px;
+}
+.box1{
+    background-color: #fff;
+    border-radius: 11px;
+    padding: 20px 20px 0px 20px;
+}
+.post{
+    background-color: #F0F2F5 ;
+    padding: 2px 7px;
+    width: 90%;
+    border: none;
+    padding: 10px;
+}
+.start{
+    i{
+        font-size: 1.3rem;
+        margin-right: 10px;
+        color: #1B74E4;
+    }
+}
+.end{
+    overflow: scroll;
+    height:800px;
+    h2{
+        color: rgb(150, 147, 147);
+    }
+
+}
+.middle{
+    .btn{
+        font-size: 1.4rem;  
+    }
+}
+@media(max-width:320px) {
+   .middle{
+        .btn {
+            font-size: 1rem; 
+            padding:5px 0px;
+        }
+        h2{
+            font-size: 1rem;
+        }
+   }
+}
